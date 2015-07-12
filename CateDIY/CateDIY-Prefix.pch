@@ -1,0 +1,26 @@
+//
+//  CateDIY-Prefix.pch
+//  CateDIY
+//
+//  Created by Yang on 15-6-10.
+//  Copyright (c) 2015年 MoYang. All rights reserved.
+//
+
+#ifndef CateDIY_CateDIY_Prefix_pch
+#define CateDIY_CateDIY_Prefix_pch
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import "Define.h"
+#define kScreenSize [UIScreen mainScreen].bounds.size
+#endif
+
+#endif
